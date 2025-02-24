@@ -1,0 +1,11 @@
+. ARIMA Model Forecast Summary
+
+The ARIMA (AutoRegressive Integrated Moving Average) model is a time series forecasting model that captures temporal dependencies in data. It was chosen for its effectiveness in forecasting future prices based on historical data. The model uses the past values of the series to predict future prices, accounting for both trends and seasonality.
+	•	Methodology:
+	•	Model Selection: ARIMA was selected after analyzing the dataset for stationarity and ensuring that the data showed no seasonal patterns, making it appropriate for ARIMA’s assumptions.
+	•	Model Fit: The ARIMA model (1,1,1) was fitted, with one lag in the autoregressive term, one difference to make the data stationary, and one lag in the moving average term.
+	•	Key Forecast Insights:
+	•	The ARIMA model forecasted the next 30 days of Brent Oil prices with the following trends:
+	•	Upward/Downward Trend: The model predicts an increase/decrease in Brent Oil prices over the forecasted period.
+	•	Confidence Interval: The forecasted values are provided with a 95% confidence interval, showing a range of expected values.
+	•	Volatility: The model tends to slightly overestimate during periods of high volatility, reflecting the complexity of forecasting in turbulent market conditions.

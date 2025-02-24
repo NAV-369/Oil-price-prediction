@@ -1,0 +1,11 @@
+. Exploratory Data Analysis (EDA)
+
+The goal of the Exploratory Data Analysis (EDA) is to uncover the underlying patterns, trends, and relationships within the Brent Oil price dataset. The dataset contains historical prices, as well as additional features that may influence oil prices, such as economic indicators and geopolitical events.
+	•	Key Findings:
+	•	The data exhibits significant fluctuations in Brent Oil prices, which can be attributed to external factors like global supply-demand imbalances, economic growth, geopolitical tensions, and natural disasters.
+	•	A clear upward and downward movement can be observed over different periods, with volatility spikes during major world events.
+	•	Missing values were found in a few entries, and they were handled using interpolation techniques to maintain data integrity and prevent bias.
+	•	Summary Statistics:
+	•	Mean Price: The average Brent Oil price over the analyzed period was $XX.
+	•	Standard Deviation: The standard deviation was $XX, indicating the volatility in oil prices.
+	•	Min/Max: Prices ranged from $XX (minimum) to $XX (maximum).
