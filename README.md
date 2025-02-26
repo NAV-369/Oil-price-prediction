@@ -1,6 +1,7 @@
 # Project README
 
-This repository is a part of the project involving data analysis and model forecasting for Brent oil prices, fraud detection, and various task-based objectives. Below are the tasks included in this project.
+This repository is a part of the project involving data analysis and model forecasting for Brent oil prices.
+Below are the tasks included in this project.
 
 ## Task 1: Data Ingestion and Preprocessing
 
