@@ -1,81 +1,61 @@
-# Task-1: Data Analysis Workflow and Model Understanding
+# Project README
 
-## Overview
+This repository is a part of the project involving data analysis and model forecasting for Brent oil prices.
+Below are the tasks included in this project.
 
-Task-1 involves defining the data analysis workflow and understanding the model and data used in this project. The goal of this task is to ensure a clear understanding of the steps involved in analyzing the data, the models used, and how the insights generated align with the business objectives.
+## Task 1: Data Ingestion and Preprocessing
 
-## Objectives
+### Overview:
+Task 1 involves collecting data from relevant sources, preprocessing it, and structuring it for further analysis. This includes cleaning the data, handling missing values, normalizing the features, and preparing the dataset for the next stages of modeling.
 
-### 1. Defining the Data Analysis Workflow
-- Clearly outline the steps and processes involved in analyzing Brent oil prices data.
-- Understand how the data is generated, sampled, and compiled.
-- Identify the model inputs, parameters, and outputs.
-- Identify and state any assumptions and limitations of the analysis.
-- Determine the main media channels and formats for communicating results to stakeholders.
+### Key Objectives:
+- Identify and connect to relevant data sources.
+- Implement a message ingestion system for collecting data.
+- Preprocess text data (tokenizing, normalizing, handling linguistic features).
+- Clean the data and structure it for analysis.
+- Store the data in a format suitable for further steps.
 
-### 2. Understanding the Model and Data
-- Read key references to grasp the core concepts and models.
-- Familiarize with models suitable for time series analysis, such as ARIMA and GARCH, and how they relate to Brent oil prices data.
-- Explain the purpose and application of these models for forecasting price fluctuations.
-- Describe the processes that generate the data and how these are modeled.
-- Discuss the expected outputs, limitations, and how predictions are made.
+### Key Steps:
+1. Connect to sources and scrape data.
+2. Tokenize and clean the text data.
+3. Handle missing values and impute data where necessary.
+4. Normalize text and numerical features for consistency.
+5. Store processed data in a structured format for use in further tasks.
 
-## Workflow Steps
+## Task 2: Feature Engineering and Model Building
 
-1. **Data Preprocessing**  
-   - Load and clean the Brent oil price data to prepare it for analysis.
-   - Handle missing data, convert date formats, and create necessary features for model training.
+### Overview:
+In Task 2, we focus on feature engineering, which involves creating new features, encoding categorical variables, handling missing values, and normalizing data. This task also includes the building of predictive models.
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Visualize and explore trends, seasonality, and correlations in the Brent oil prices.
-   - Use graphs and summary statistics to identify key patterns.
+### Key Objectives:
+- Create aggregate and extracted features from raw data.
+- Encode categorical variables to prepare them for machine learning models.
+- Handle missing data effectively.
+- Normalize or standardize numerical data for modeling.
 
-3. **Model Building**  
-   - Apply ARIMA (AutoRegressive Integrated Moving Average) for time series forecasting of Brent oil prices.
-   - Optionally, apply GARCH (Generalized Autoregressive Conditional Heteroskedasticity) to model volatility and risk.
+### Key Steps:
+1. Implement feature engineering techniques (e.g., creating interaction features, calculating statistics).
+2. Apply feature encoding for categorical variables.
+3. Handle missing values by imputation or removal.
+4. Normalize or standardize the data for consistency.
+5. Build and evaluate predictive models (e.g., Random Forest, GBM).
+6. Tune models for better performance.
 
-4. **Model Evaluation**  
-   - Evaluate the model's performance using relevant metrics such as RMSE (Root Mean Square Error).
-   - Compare the forecasted results with the actual data to assess prediction accuracy.
+## Task 3: Model Serving and Dashboard Development
 
-5. **Results Communication**  
-   - Summarize and communicate the findings using clear visualizations and reports.
-   - Present the results to stakeholders using appropriate formats (PDF, PowerPoint, etc.).
+### Overview:
+Task 3 involves creating a REST API for real-time predictions from trained models and building an interactive dashboard for visualizing key insights from the data. The dashboard will provide users with a better understanding of the models’ outputs and the impact of various events on the forecasted data.
 
-## Key Concepts
+### Key Objectives:
+- Develop a REST API to serve machine learning models.
+- Build an interactive, user-friendly dashboard to visualize data and results.
+- Integrate data filters, date ranges, and event highlights into the dashboard.
+- Provide key metrics like volatility, forecast accuracy, and other model performance metrics.
 
-### ARIMA Model
-- **AR (AutoRegressive)**: Models the relationship between an observation and lagged observations.
-- **I (Integrated)**: Makes the series stationary by differencing.
-- **MA (Moving Average)**: Models the relationship between an observation and residual errors from lagged observations.
-- **Purpose**: ARIMA helps forecast future values in a time series by capturing trends and patterns.
-
-### GARCH Model
-- **Generalized Autoregressive Conditional Heteroskedasticity**: A statistical model used to estimate the volatility of financial time series data.
-- **Purpose**: GARCH models volatility clustering, where periods of high volatility are followed by more high volatility and vice versa.
-
-## Requirements
-
-- Python 3.10 or higher
-- Required Python libraries:
-  - pandas
-  - statsmodels
-  - matplotlib
-  - arch (for GARCH model)
-
-## Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repository.git
-
-	2.	Install the required packages:
-
-pip install -r requirements.txt
-
-
-	3.	Run the scripts and Jupyter notebooks in the scripts/ and notebooks/ directories for data processing, EDA, and model training.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Key Steps:
+1. Develop an API using Flask for serving trained models.
+2. Set up endpoints for real-time predictions and model evaluation metrics.
+3. Build a front-end dashboard using React for visualizing insights.
+4. Integrate charting libraries like Recharts, Chart.js, or D3.js for data visualization.
+5. Ensure responsiveness across different devices.
+6. Test and deploy the dashboard for end-users.
